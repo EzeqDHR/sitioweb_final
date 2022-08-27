@@ -1,0 +1,231 @@
+body{
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.subtitulo{
+    font-size: 2.3em;
+    font-weight: 800;
+    color:palevioletred;
+    margin-bottom: 50px;
+    align-items: left;
+    margin-top: 90px;
+}
+
+.titulo{
+    font-size: 3.5em;
+    font-weight: 800;
+    color:palevioletred;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.texto{
+    
+    font-size: 25px;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+    
+    
+    
+}
+
+a{
+    color: palevioletred;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+    
+}
+
+.img-logo{
+    width: 100px;
+}
+
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li{
+    padding: 10px;
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+.nav-main ul li a:hover{
+    border-bottom: 2px solid palevioletred;
+}
+
+.new-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 40px;
+}
+
+.new-cards2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .new-cards2 img{
+    
+    margin-top: 80px;
+    width: 100%;
+    height: 300px;
+    
+}
+
+.new-cards img{
+    
+    margin-top: 80px;
+    width: 100%;
+    height: 190px;
+    
+}
+
+.new-cards h3{
+    color: palevioletred;
+}
+
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.4rem;
+    display: none;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 10px;
+    background: palevioletred;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 10px;
+    
+}
+.btn:hover{
+    opacity: .9;
+}
+
+
+/* Social */
+
+.social{
+    
+    width: 100%;
+    background: grey;
+    margin-top: 80px;
+}
+.social h3{
+    text-align:center;
+    font-size: 27px;
+    margin:  0px 80px ;
+}
+.social p{
+
+    text-align:center;
+    font-size: 24px;
+    margin:  0px 80px ;
+
+}
+.links{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a{
+    margin: 0px 30px 80px;
+}
+
+.links a i{
+    color: white;
+    margin-top: 40px;
+    font-size: 2rem;
+}
+
+@media (max-width: 760px){
+
+    .menu-btn{
+        display: block;
+    }
+
+    .nav-main ul.nav-menu{
+         display: block;
+         position: absolute;
+         top: 0;
+         left: 0;
+         background:gray;
+         height: 100%;
+         padding: 30px;
+         opacity: .9;
+         transform: translateX(-400px);
+         transition: transform .5s ease-in-out;
+    }
+
+
+
+    .nav-main ul.nav-menu.show{
+        transform: translateX(-20px);
+    }
+
+    .nav-main ul.nav-menu li{
+        padding: 20px;
+        font-size: 14px;
+        border-bottom: wheat solid 1px;
+    }
+
+    .nav-main ul.nav-menu-right{
+        margin-right: 40px;
+        display: none;
+    }
+
+
+
+    .new-cards{
+        grid-template-columns: 1fr 1fr ;    
+    }
+}
+
+@media (max-width: 560px){
+    .new-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .new-cards img{
+        height: 270px;
+    }
+  
+}
