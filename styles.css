@@ -187,7 +187,7 @@ ul{
          position: absolute;
          top: 0;
          left: 0;
-         background:gray;
+         background:rgb(43, 43, 43);
          height: 100%;
          padding: 30px;
          opacity: .9;
